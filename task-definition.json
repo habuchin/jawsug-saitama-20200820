@@ -1,0 +1,25 @@
+{
+  "family": "hello-saitama",
+  "containerDefinitions": [
+    {
+      "name": "hello-saitama",
+      "image": "{{AWS_ACCOUNT_ID}}.dkr.ecr.ap-northeast-1.amazonaws.com/hello-saitama:latest",
+      "cpu": 0,
+      "essential": true,
+      "environment": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/hello-saitama",
+          "awslogs-region": "ap-northeast-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "taskRoleArn": "arn:aws:iam::{{AWS_ACCOUNT_ID}}:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::{{AWS_ACCOUNT_ID}}:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "memory": "512"
+}
