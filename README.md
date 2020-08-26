@@ -3,6 +3,10 @@
 このリポジトリでは、[「JAWS-UG さいたま支部 第13回勉強会 〜サイタマ ユウチュウ部 オンライン勉強β Vol.1〜」](https://jawsug-saitama.doorkeeper.jp/events/105857 "JAWS-UG さいたま支部 第13回勉強会 〜サイタマ ユウチュウ部 オンライン勉強β Vol.1〜")
 で発表した「Fargateでサクっとバッチ処理実行してみる」の資料と実際に使用したソースコードを公開しています。
 
+### 発表動画
+Youtubeに動画を公開していますので、宜しければ合わせてご覧ください。
+https://youtu.be/yLABC5KnD2E
+
 ## 今回実現したいこと
 1. Githubにpushする
 1. Codebuildで実行したい処理を含むDockerイメージを作成する
